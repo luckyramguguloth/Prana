@@ -1,0 +1,26 @@
+﻿name: Zero-Network Privacy Gate
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  privacy-gate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Make privacy gate script executable
+        run: chmod +x tools/check_no_network.sh
+
+      - name: Verify Zero Network Permissions & Dependencies
+        run: python tools/check_no_network.py

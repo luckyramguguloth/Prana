@@ -1,0 +1,13 @@
+﻿{
+  "model_name": "Gemma-3-270M-IT-INT8",
+  "base_architecture": "Gemma-3",
+  "parameter_count": "270M",
+  "quantization": "INT8 (W8A8)",
+  "runtime": "MediaPipe LLM Inference / LiteRT-LM",
+  "temperature": 0.3,
+  "top_k": 40,
+  "max_tokens": 120,
+  "hardware_target": "Qualcomm Snapdragon NPU / Hexagon DSP",
+  "offline_verified": true,
+  "prompt_template": "You are a calm, non-diagnostic wellness coach. Given these on-device measurements, write ONE short paragraph (max 3 sentences) of plain-language, encouraging, non-medical guidance. Never mention diseases or diagnoses.\n\nToday: HR={hr} bpm, HRV={hrv} ms, voice_stress={stress}/10.\n7-day average: HR={avg_hr}, HRV={avg_hrv}, voice_stress={avg_stress}."
+}

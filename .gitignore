@@ -1,0 +1,15 @@
+﻿*.iml
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+app/build/
+ml/checkpoints/
+ml/exported/
+*.pyc
+__pycache__/
