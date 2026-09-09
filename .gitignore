@@ -13,3 +13,5 @@ ml/checkpoints/
 ml/exported/
 *.pyc
 __pycache__/
+description.md
+*.log
