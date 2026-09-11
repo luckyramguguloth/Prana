@@ -134,7 +134,7 @@ python tools/run_all_tests.py
 
 ## Team
 **PaaruDev** (Solo Builder)  
-- **Gugulothu Laxman (Luckyram)** — Android Architecture, Edge ML, Cryptography & Design
+- **Gugulothu Laxman** — Android Architecture, Edge ML, Cryptography & Design
 
 ---
 
